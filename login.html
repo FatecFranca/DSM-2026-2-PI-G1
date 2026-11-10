@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#283e3b" />
+    <title>Entrar · Tia Lari Banho e Tosa</title>
+    <link rel="icon" href="assets/images/logo.png" type="image/png" />
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+    <script
+      defer
+      src="assets/vendor/bootstrap/bootstrap.bundle.min.js"
+    ></script>
+    <script defer src="assets/js/components/ui.js"></script>
+    <script defer src="assets/js/components/layout.js"></script>
+    <script defer src="assets/js/pages/login.js"></script>
+  </head>
+  <body data-page="login">
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+    <main class="login-layout" id="main-content">
+      <section class="login-story">
+        <a href="index.html" class="login-brand" aria-label="Tia Lari — início"
+          ><img
+            src="assets/images/logo.png"
+            width="638"
+            height="637"
+            alt="Tia Lari Banho e Tosa"
+        /></a>
+        <div>
+          <h1>Cuidado e organização em cada atendimento.</h1>
+          <p class="mt-4">
+            Tutores, pets e a rotina de banho e tosa em um só lugar.
+          </p>
+        </div>
+        <div class="story-signature">
+          O carinho de sempre.<br />Uma rotina mais leve.
+        </div>
+        <footer>FEITO PARA A EQUIPE · TIA LARI BANHO E TOSA</footer>
+      </section>
+      <section class="login-main" aria-labelledby="login-title">
+        <div class="login-content">
+          <div class="card">
+            <div class="card-body">
+              <p class="eyebrow">Gestão interna</p>
+              <h2 id="login-title">Que bom ter você aqui.</h2>
+              <p class="text-body-secondary mt-3 mb-4">
+                Entre para acessar o protótipo do sistema.
+              </p>
+              <form id="login-form" class="needs-validation" novalidate>
+                <div class="mb-3">
+                  <label class="form-label" for="identity">CPF ou e-mail</label
+                  ><input
+                    class="form-control"
+                    id="identity"
+                    name="identity"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" for="password">Senha</label>
+                  <div class="input-group">
+                    <input
+                      class="form-control"
+                      id="password"
+                      name="password"
+                      type="password"
+                      required
+                      minlength="4"
+                    /><button
+                      class="btn btn-outline-primary password-toggle"
+                      id="toggle-password"
+                      type="button"
+                      aria-label="Mostrar senha"
+                    >
+                      <span data-icon="eye"></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end mb-4">
+                  <button
+                    type="button"
+                    class="btn btn-link p-0 small"
+                    id="forgot-password"
+                  >
+                    Esqueceu a senha?
+                  </button>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">
+                  Entrar <span data-icon="arrow"></span>
+                </button>
+              </form>
+              <p class="access-note mt-4 mb-0">
+                <span data-icon="lock"></span>Acesso de demonstração
+              </p>
+            </div>
+          </div>
+          <p class="demo-note mt-4">
+            Use qualquer identificação e uma senha de 4 ou mais caracteres. Não
+            utilize dados reais.
+          </p>
+        </div>
+      </section>
+    </main>
+    <div id="app-feedback"></div>
+  </body>
+</html>

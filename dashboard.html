@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#283e3b" />
+    <title>Visão geral da loja · Tia Lari Banho e Tosa</title>
+    <link rel="icon" href="assets/images/logo.png" type="image/png" />
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+    <script
+      defer
+      src="assets/vendor/bootstrap/bootstrap.bundle.min.js"
+    ></script>
+    <script defer src="assets/js/components/ui.js"></script>
+    <script defer src="assets/js/components/layout.js"></script>
+    <script defer src="assets/js/services/store.js"></script>
+    <script defer src="assets/js/pages/dashboard.js"></script>
+  </head>
+  <body data-page="dashboard" data-breadcrumb="Visão geral">
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+    <div id="app-sidebar"></div>
+    <div class="workspace">
+      <div class="tl-container">
+        <div id="app-header"></div>
+        <main id="main-content" tabindex="-1">
+          <header class="page-heading row-between">
+            <div>
+              <h1>Visão geral da loja</h1>
+              <p class="lead">
+                Acompanhe cadastros, agenda e atendimentos em um só lugar.
+              </p>
+            </div>
+          </header>
+          <section class="welcome card">
+            <div>
+              <h2>Olá, equipe Tia Lari!</h2>
+              <p>Um dia organizado para cuidar de cada pet com carinho.</p>
+            </div>
+            <div class="date">
+              <span data-icon="calendar"></span><time id="today-label"></time>
+            </div>
+          </section>
+          <section class="summary-grid" id="dashboard-metrics">
+            <div class="card loading-row">Carregando indicadores…</div>
+          </section>
+          <section class="section card data-card">
+            <div class="row-between panel-head">
+              <div>
+                <h2>Agenda de hoje</h2>
+                <p class="lead" id="agenda-subtitle">
+                  Compromissos programados para hoje.
+                </p>
+              </div>
+              <a href="agendas.html" class="btn btn-sm-soft"
+                >Ver agenda completa</a
+              >
+            </div>
+            <div class="table-wrap">
+              <table class="ds-table table">
+                <thead>
+                  <tr>
+                    <th>Horário</th>
+                    <th>Pet</th>
+                    <th>Tutor</th>
+                    <th>Serviço</th>
+                    <th>Responsável</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="today-agenda">
+                  <tr>
+                    <td colspan="6" class="loading-row">Carregando agenda…</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </main>
+        <footer class="footer-note">
+          Tia Lari Banho e Tosa · Gestão interna · Ambiente de demonstração
+        </footer>
+      </div>
+    </div>
+    <div id="app-feedback"></div>
+  </body>
+</html>

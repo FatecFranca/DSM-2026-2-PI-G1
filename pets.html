@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#283e3b" />
+    <title>Pets · Tia Lari Banho e Tosa</title>
+    <link rel="icon" href="assets/images/logo.png" type="image/png" />
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+    <script
+      defer
+      src="assets/vendor/bootstrap/bootstrap.bundle.min.js"
+    ></script>
+    <script defer src="assets/js/components/ui.js"></script>
+    <script defer src="assets/js/components/layout.js"></script>
+    <script defer src="assets/js/services/store.js"></script>
+    <script defer src="assets/js/pages/lists.js"></script>
+  </head>
+  <body data-page="pets" data-breadcrumb="Cadastros / Pets">
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+    <div id="app-sidebar"></div>
+    <div class="workspace">
+      <div class="tl-container">
+        <div id="app-header"></div>
+        <main id="main-content" tabindex="-1">
+          <header class="page-heading row-between">
+            <div>
+              <h1>Pets</h1>
+              <p class="lead">
+                Cada pet com seu tutor, porte e cuidados importantes.
+              </p>
+            </div>
+            <a href="novo-pet.html" class="btn btn-primary"
+              ><span data-icon="plus"></span>Cadastrar pet</a
+            >
+          </header>
+          <section class="section card list-panel">
+            <div class="searchbar">
+              <div class="search-field">
+                <span data-icon="search"></span
+                ><input
+                  class="input form-control"
+                  type="search"
+                  id="search"
+                  aria-label="Buscar pet ou tutor"
+                  placeholder="Buscar pelo nome do pet ou tutor…"
+                />
+              </div>
+              <select class="input form-select" id="status-filter">
+                <option value="">Todos os portes</option>
+                <option>Pequeno</option>
+                <option>Médio</option>
+                <option>Grande</option></select
+              ><select class="input form-select" id="sort">
+                <option value="original">Mais recentes</option>
+                <option value="asc">Nome: A a Z</option>
+                <option value="desc">Nome: Z a A</option>
+              </select>
+            </div>
+            <div class="row-between list-meta">
+              <p class="eyebrow">Registros cadastrados</p>
+              <span class="tag" id="record-count"></span>
+            </div>
+            <div class="row g-3 records-grid" id="records"></div>
+            <div class="list-footer">
+              <span id="list-summary"></span
+              ><span class="demo">Dados locais</span>
+            </div>
+          </section>
+        </main>
+        <footer class="footer-note">
+          Tia Lari Banho e Tosa · Gestão interna · Ambiente de demonstração
+        </footer>
+      </div>
+    </div>
+    <div id="app-feedback"></div>
+  </body>
+</html>

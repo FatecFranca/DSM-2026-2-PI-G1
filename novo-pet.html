@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#283e3b" />
+    <title>Cadastrar pet · Tia Lari Banho e Tosa</title>
+    <link rel="icon" href="assets/images/logo.png" type="image/png" />
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+    <script
+      defer
+      src="assets/vendor/bootstrap/bootstrap.bundle.min.js"
+    ></script>
+    <script defer src="assets/js/components/ui.js"></script>
+    <script defer src="assets/js/components/layout.js"></script>
+    <script defer src="assets/js/services/store.js"></script>
+    <script defer src="assets/js/pages/forms.js"></script>
+  </head>
+  <body data-page="novo-pet" data-breadcrumb="Cadastros / Pets / Novo pet">
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+    <div id="app-sidebar"></div>
+    <div class="workspace">
+      <div class="tl-container">
+        <div id="app-header"></div>
+        <main id="main-content" tabindex="-1">
+          <header class="page-heading">
+            <div>
+              <h1>Cadastrar pet</h1>
+              <p class="lead">Adicione um novo pet a um tutor já cadastrado.</p>
+            </div>
+          </header>
+          <section class="card form-panel">
+            <div class="card-body">
+              <div class="form-banner">
+                <h2>Dados do pet</h2>
+                <p>O pet sempre deve estar vinculado a um tutor existente.</p>
+              </div>
+              <form id="pet-form" class="needs-validation" novalidate>
+                <div class="row g-4">
+                  <div class="col-12">
+                    <label class="form-label" for="tutor">Tutor *</label
+                    ><select
+                      class="input form-select"
+                      id="tutor"
+                      name="tutor"
+                      required
+                    >
+                      <option value="">Selecione um tutor cadastrado</option>
+                    </select>
+                    <div class="invalid-feedback">Selecione um tutor.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="name">Nome do pet *</label
+                    ><input
+                      class="input form-control"
+                      id="name"
+                      name="name"
+                      required
+                      maxlength="80"
+                    />
+                    <div class="invalid-feedback">Informe o nome do pet.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="breed">Raça *</label
+                    ><input
+                      class="input form-control"
+                      id="breed"
+                      name="breed"
+                      required
+                      maxlength="80"
+                    />
+                    <div class="invalid-feedback">Informe a raça.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="size">Porte *</label
+                    ><select
+                      class="input form-select"
+                      id="size"
+                      name="size"
+                      required
+                    >
+                      <option value="">Selecione</option>
+                      <option>Pequeno</option>
+                      <option>Médio</option>
+                      <option>Grande</option>
+                    </select>
+                    <div class="invalid-feedback">Selecione o porte.</div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="notes">Observações</label
+                    ><textarea
+                      class="input form-control"
+                      id="notes"
+                      name="notes"
+                      rows="4"
+                      maxlength="1000"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="form-actions">
+                  <small>* Campos obrigatórios</small>
+                  <div class="d-flex gap-2">
+                    <a href="pets.html" class="btn btn-outline-primary"
+                      >Cancelar</a
+                    ><button class="btn btn-primary" type="submit">
+                      Salvar pet
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </section>
+        </main>
+        <footer class="footer-note">
+          Tia Lari Banho e Tosa · Gestão interna · Ambiente de demonstração
+        </footer>
+      </div>
+    </div>
+    <div id="app-feedback"></div>
+  </body>
+</html>

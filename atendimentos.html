@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#283e3b" />
+    <title>Atendimentos · Tia Lari Banho e Tosa</title>
+    <link rel="icon" href="assets/images/logo.png" type="image/png" />
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+    <script
+      defer
+      src="assets/vendor/bootstrap/bootstrap.bundle.min.js"
+    ></script>
+    <script defer src="assets/js/components/ui.js"></script>
+    <script defer src="assets/js/components/layout.js"></script>
+    <script defer src="assets/js/services/store.js"></script>
+    <script defer src="assets/js/pages/atendimentos.js"></script>
+  </head>
+  <body data-page="atendimentos" data-breadcrumb="Operação / Atendimentos">
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+    <div id="app-sidebar"></div>
+    <div class="workspace">
+      <div class="tl-container">
+        <div id="app-header"></div>
+        <main id="main-content" tabindex="-1">
+          <header class="page-heading row-between">
+            <div>
+              <h1>Atendimentos</h1>
+              <p class="lead">Acompanhe a execução dos serviços agendados.</p>
+            </div>
+            <a href="agendas.html" class="btn btn-primary"
+              ><span data-icon="calendar"></span>Ir para agenda</a
+            >
+          </header>
+          </section>
+          <section class="summary-grid" id="attendance-metrics"></section>
+          <section class="card data-card section">
+            <div class="panel-head">
+              <div class="module-toolbar mb-0">
+                <div class="toolbar-grow">
+                  <label class="form-label" for="attendance-search"
+                    >Buscar</label
+                  ><input
+                    class="form-control input"
+                    id="attendance-search"
+                    type="search"
+                    placeholder="Pet, tutor ou serviço"
+                  />
+                </div>
+                <div class="toolbar-field">
+                  <label class="form-label" for="attendance-status"
+                    >Status</label
+                  ><select class="form-select input" id="attendance-status">
+                    <option value="">Todos</option>
+                    <option>Aguardando</option>
+                    <option>Em andamento</option>
+                    <option>Finalizado</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="table-wrap">
+              <table class="ds-table table">
+                <thead>
+                  <tr>
+                    <th>Data / hora</th>
+                    <th>Pet / Tutor</th>
+                    <th>Serviço</th>
+                    <th>Responsável</th>
+                    <th>Status</th>
+                    <th class="text-end">Ações</th>
+                  </tr>
+                </thead>
+                <tbody id="attendance-table"></tbody>
+              </table>
+            </div>
+          </section>
+        </main>
+        <footer class="footer-note">
+          Tia Lari Banho e Tosa · Gestão interna · Ambiente de demonstração
+        </footer>
+      </div>
+    </div>
+    <div id="app-feedback"></div>
+  </body>
+</html>

@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#283e3b" />
+    <title>Agendas · Tia Lari Banho e Tosa</title>
+    <link rel="icon" href="assets/images/logo.png" type="image/png" />
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+    <script
+      defer
+      src="assets/vendor/bootstrap/bootstrap.bundle.min.js"
+    ></script>
+    <script defer src="assets/js/components/ui.js"></script>
+    <script defer src="assets/js/components/layout.js"></script>
+    <script defer src="assets/js/services/store.js"></script>
+    <script defer src="assets/js/pages/agendas.js"></script>
+  </head>
+  <body data-page="agendas" data-breadcrumb="Operação / Agendas">
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+    <div id="app-sidebar"></div>
+    <div class="workspace">
+      <div class="tl-container">
+        <div id="app-header"></div>
+        <main id="main-content" tabindex="-1">
+          <header class="page-heading row-between">
+            <div>
+              <h1>Agendas</h1>
+              <p class="lead">
+                Organize horários, serviços e responsáveis pelos pets.
+              </p>
+            </div>
+            <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#agenda-modal"
+            >
+              <span data-icon="plus"></span>Novo agendamento
+            </button>
+          </header>
+          <section class="summary-grid" id="agenda-metrics"></section>
+          <section class="card data-card section">
+            <div class="panel-head">
+              <div class="module-toolbar mb-0">
+                <div class="toolbar-field">
+                  <label class="form-label" for="agenda-date">Data</label
+                  ><input
+                    class="form-control input"
+                    id="agenda-date"
+                    type="date"
+                  />
+                </div>
+                <div class="toolbar-grow">
+                  <label class="form-label" for="agenda-search">Buscar</label
+                  ><input
+                    class="form-control input"
+                    id="agenda-search"
+                    type="search"
+                    placeholder="Pet, tutor ou serviço"
+                  />
+                </div>
+                <div class="toolbar-field">
+                  <label class="form-label" for="agenda-status">Status</label
+                  ><select class="form-select input" id="agenda-status">
+                    <option value="">Todos</option>
+                    <option>Agendado</option>
+                    <option>Confirmado</option>
+                    <option>Em andamento</option>
+                    <option>Finalizado</option>
+                    <option>Cancelado</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="table-wrap">
+              <table class="ds-table table">
+                <thead>
+                  <tr>
+                    <th>Data</th>
+                    <th>Horário</th>
+                    <th>Pet / Tutor</th>
+                    <th>Serviço</th>
+                    <th>Responsável</th>
+                    <th>Status</th>
+                    <th class="text-end">Ações</th>
+                  </tr>
+                </thead>
+                <tbody id="agenda-table"></tbody>
+              </table>
+            </div>
+          </section>
+          <div
+            class="modal fade page-modal"
+            id="agenda-modal"
+            tabindex="-1"
+            aria-labelledby="agenda-modal-title"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <form id="agenda-form" class="needs-validation" novalidate>
+                  <div class="modal-header">
+                    <h2 class="modal-title fs-4" id="agenda-modal-title">
+                      Novo agendamento
+                    </h2>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Fechar"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <label class="form-label" for="schedule-date"
+                          >Data *</label
+                        ><input
+                          class="form-control input"
+                          id="schedule-date"
+                          name="date"
+                          type="date"
+                          required
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label" for="schedule-time"
+                          >Horário *</label
+                        ><input
+                          class="form-control input"
+                          id="schedule-time"
+                          name="time"
+                          type="time"
+                          required
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label" for="schedule-pet"
+                          >Pet *</label
+                        ><select
+                          class="form-select input"
+                          id="schedule-pet"
+                          name="petId"
+                          required
+                        >
+                          <option value="">Selecione</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label" for="schedule-user"
+                          >Responsável *</label
+                        ><select
+                          class="form-select input"
+                          id="schedule-user"
+                          name="responsibleUserId"
+                          required
+                        >
+                          <option value="">Selecione</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label" for="schedule-service"
+                          >Serviço *</label
+                        ><select
+                          class="form-select input"
+                          id="schedule-service"
+                          name="service"
+                          required
+                        >
+                          <option value="">Selecione</option>
+                          <option>Banho</option>
+                          <option>Tosa</option>
+                          <option>Banho e tosa</option>
+                          <option>Tosa higiênica</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label" for="schedule-status"
+                          >Status *</label
+                        ><select
+                          class="form-select input"
+                          id="schedule-status"
+                          name="status"
+                          required
+                        >
+                          <option>Agendado</option>
+                          <option>Confirmado</option>
+                        </select>
+                      </div>
+                      <div class="col-12">
+                        <label class="form-label" for="schedule-notes"
+                          >Observações</label
+                        ><textarea
+                          class="form-control input"
+                          id="schedule-notes"
+                          name="notes"
+                          rows="3"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div
+                      class="invalid-feedback d-block mt-3"
+                      id="agenda-business-error"
+                      hidden
+                    ></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      Cancelar</button
+                    ><button type="submit" class="btn btn-primary">
+                      Salvar agendamento
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="footer-note">
+          Tia Lari Banho e Tosa · Gestão interna · Ambiente de demonstração
+        </footer>
+      </div>
+    </div>
+    <div id="app-feedback"></div>
+  </body>
+</html>
