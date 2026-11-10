@@ -152,6 +152,11 @@ TiaLari_PetShop/
 │   └── vendor/
 │
 ├── docs/
+|   ├── PI_Pet_Shop_Tia_Lari_1_Semestre.docx
+│   ├── references/
+│       ├── Figma alta fidelidade/
+│       └── Figma modelo baixa fidelidade/
+│       
 │
 └── README.md
 ```
