@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "date": "2026-11-04",
+    "time": "09:00",
+    "petId": 1,
+    "service": "Banho e tosa",
+    "responsibleUserId": 3,
+    "status": "Confirmado",
+    "notes": "Buscar às 10h30."
+  },
+  {
+    "id": 2,
+    "date": "2026-11-04",
+    "time": "10:00",
+    "petId": 2,
+    "service": "Banho",
+    "responsibleUserId": 3,
+    "status": "Em andamento",
+    "notes": ""
+  },
+  {
+    "id": 3,
+    "date": "2026-11-04",
+    "time": "11:00",
+    "petId": 3,
+    "service": "Tosa higiênica",
+    "responsibleUserId": 2,
+    "status": "Agendado",
+    "notes": ""
+  },
+  {
+    "id": 4,
+    "date": "2026-11-05",
+    "time": "09:30",
+    "petId": 4,
+    "service": "Banho",
+    "responsibleUserId": 3,
+    "status": "Agendado",
+    "notes": ""
+  },
+  {
+    "id": 5,
+    "date": "2026-11-05",
+    "time": "14:00",
+    "petId": 5,
+    "service": "Banho e tosa",
+    "responsibleUserId": 3,
+    "status": "Confirmado",
+    "notes": ""
+  },
+  {
+    "id": 6,
+    "date": "2026-11-06",
+    "time": "10:30",
+    "petId": 6,
+    "service": "Tosa",
+    "responsibleUserId": 3,
+    "status": "Agendado",
+    "notes": ""
+  }
+]

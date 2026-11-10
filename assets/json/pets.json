@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Luna",
+    "breed": "Shih-tzu",
+    "size": "Pequeno",
+    "tutorId": 1,
+    "notes": "Prefere banho morno.",
+    "photo": "https://images.unsplash.com/photo-1588178393136-4b0950f78c38?w=180&h=180&fit=crop"
+  },
+  {
+    "id": 2,
+    "name": "Thor",
+    "breed": "Golden retriever",
+    "size": "Grande",
+    "tutorId": 2,
+    "notes": "Secagem com cuidado nas orelhas.",
+    "photo": "https://images.unsplash.com/photo-1738001525610-fca097d68b1c?w=180&h=180&fit=crop"
+  },
+  {
+    "id": 3,
+    "name": "Mel",
+    "breed": "Siamês",
+    "size": "Pequeno",
+    "tutorId": 3,
+    "notes": "Manuseio calmo.",
+    "photo": "https://www.petpetin.com/images/cat-category.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Bento",
+    "breed": "Pug",
+    "size": "Pequeno",
+    "tutorId": 4,
+    "notes": "Atenção à respiração durante a secagem.",
+    "photo": "https://images.unsplash.com/photo-1726079424751-d92845e1be08?w=180&h=180&fit=crop"
+  },
+  {
+    "id": 5,
+    "name": "Nina",
+    "breed": "Sem raça definida",
+    "size": "Pequeno",
+    "tutorId": 5,
+    "notes": "",
+    "photo": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=180&h=180&fit=crop"
+  },
+  {
+    "id": 6,
+    "name": "Toby",
+    "breed": "Sem raça definida",
+    "size": "Médio",
+    "tutorId": 6,
+    "notes": "",
+    "photo": "https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=180&h=180&fit=crop"
+  }
+]

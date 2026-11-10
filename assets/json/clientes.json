@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Mariana Silva",
+    "phone": "(16) 99999-1001",
+    "cpf": "",
+    "email": "mariana@exemplo.com",
+    "address": "Jaboticabal - SP",
+    "photo": "assets/images/tutores/tutor-6.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Carlos Almeida",
+    "phone": "(16) 99999-1002",
+    "cpf": "",
+    "email": "carlos@exemplo.com",
+    "address": "Jaboticabal - SP",
+    "photo": "assets/images/tutores/tutor-1.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Ana Costa",
+    "phone": "(16) 99999-1003",
+    "cpf": "",
+    "email": "ana@exemplo.com",
+    "address": "Jaboticabal - SP",
+    "photo": "assets/images/tutores/tutor-4.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Fernanda Lima",
+    "phone": "(16) 99999-1004",
+    "cpf": "",
+    "email": "fernanda@exemplo.com",
+    "address": "Jaboticabal - SP",
+    "photo": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=180&h=180&fit=crop"
+  },
+  {
+    "id": 5,
+    "name": "Paulo Roberto",
+    "phone": "(16) 99999-1005",
+    "cpf": "",
+    "email": "paulo@exemplo.com",
+    "address": "Jaboticabal - SP",
+    "photo": "assets/images/tutores/tutor-3.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Juliana Rocha",
+    "phone": "(16) 99999-1006",
+    "cpf": "",
+    "email": "juliana@exemplo.com",
+    "address": "Jaboticabal - SP",
+    "photo": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=180&h=180&fit=crop"
+  }
+]
