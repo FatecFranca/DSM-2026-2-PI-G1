@@ -32,6 +32,22 @@ Desenvolver um website funcional para auxiliar no gerenciamento das principais a
 - Reduzir a possibilidade de cadastros duplicados.
 - Proporcionar uma interface simples e intuitiva.
 
+## 🎥 Vídeo de Apresentação — Elevator Pitch
+
+Como parte da apresentação do Projeto Interdisciplinar da Fatec Franca, nossa equipe desenvolveu um **Elevator Pitch** demonstrando a proposta e o funcionamento do sistema Tia Lari Pet Shop.
+
+O vídeo apresenta o problema identificado no estabelecimento, a solução desenvolvida, as metodologias de Engenharia de Software aplicadas e uma demonstração prática das principais funcionalidades.
+
+**▶️ [Assistir à apresentação do Sistema no YouTube](https://youtu.be/TWHXSrh48Tw)**
+
+### Conteúdo da apresentação
+
+- Problema enfrentado pelo estabelecimento.
+- Solução proposta e seus benefícios.
+- Metodologia e levantamento de requisitos.
+- Identidade visual e tecnologias utilizadas.
+- Demonstração prática do sistema.
+
 ## 💻 Funcionalidades
 
 ### 👤 Gerenciamento de Clientes
