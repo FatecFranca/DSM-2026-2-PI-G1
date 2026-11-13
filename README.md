@@ -48,6 +48,20 @@ O vídeo apresenta o problema identificado no estabelecimento, a solução desen
 - Identidade visual e tecnologias utilizadas.
 - Demonstração prática do sistema.
 
+## 🎨 Protótipo de Alta Fidelidade — Figma
+
+Durante o desenvolvimento do Tia Lari Pet Shop, foi elaborado um **protótipo de alta fidelidade no Figma**, representando visualmente as principais telas e algumas funcionalidades do sistema.
+
+O protótipo apresenta a identidade visual baseada na logomarca original do estabelecimento, incluindo a paleta de cores, tipografia, componentes da interface e organização dos elementos.
+
+Seu objetivo é demonstrar a estrutura visual, a navegação e a experiência do usuário planejadas para o sistema.
+
+### 🔗 Acessar o protótipo
+
+**[Visualizar o protótipo de alta fidelidade no Figma](https://www.figma.com/design/sveElsqkbyU1LMTxKFjBl6/Telas-Pet-shop-P.I--Alta-fidelidade-?node-id=0-1&t=z7CQWP9J9Z5hiOcD-1)**
+
+O modelo contempla as principais interfaces do projeto, como login, dashboard, cadastro de tutores e pets, agendamentos e atendimentos.
+
 ## 💻 Funcionalidades
 
 ### 👤 Gerenciamento de Clientes
