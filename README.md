@@ -169,6 +169,7 @@ TiaLari_PetShop/
 │
 ├── docs/
 |   ├── PI_Pet_Shop_Tia_Lari_1_Semestre.docx
+|   ├──PI_DSM_Tia_Lari_Pet-shop_apresentacao.pptx
 │   ├── references/
 │       ├── Figma alta fidelidade/
 │       └── Figma modelo baixa fidelidade/
